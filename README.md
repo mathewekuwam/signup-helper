@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🚀 Signup Helper & Extension Generator
 
 > **Turn any manual signup or web workflow into a standalone Manifest V3 Chrome Extension — with zero dependencies and privacy built in.**
@@ -226,3 +227,7 @@ Contributions, feedback, and improvements are welcome!
 ## 📄 License
 
 This project is licensed under the [MIT License](LICENSE).
+=======
+# signup-helper
+Record any manual signup or web workflow and compile it into a standalone Manifest V3 Chrome Extension. Zero dependencies, privacy-first, and fully customizable with rules and JSON data.
+>>>>>>> f0e1184ec7bb401e8bb012bfa71f7f96f4538a9d
