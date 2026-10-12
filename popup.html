@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body { width: 320px; padding: 14px; font-family: system-ui, sans-serif; font-size: 13px; }
+    h3 { margin: 0 0 8px; font-size: 14px; }
+    section { margin-bottom: 14px; padding-bottom: 12px; border-bottom: 1px solid #ddd; }
+    section:last-child { border: none; margin: 0; padding: 0; }
+    input, textarea { width: 100%; box-sizing: border-box; padding: 8px; margin-bottom: 8px; font-size: 13px; }
+    button { padding: 8px; font-size: 13px; cursor: pointer; margin: 0 4px 6px 0; }
+    .full { width: 100%; margin: 0; }
+    #recStatus { margin-bottom: 8px; font-weight: 600; }
+    #msg, #recMsg { margin-top: 6px; font-size: 12px; color: #555; white-space: pre-wrap; }
+    details { margin-top: 4px; }
+    summary { cursor: pointer; font-size: 12px; color: #555; margin-bottom: 6px; }
+  </style>
+</head>
+<body>
+  <section>
+    <h3>1. Record, then build the extension</h3>
+    <div id="recStatus"></div>
+    <button id="recStart">Start recording</button>
+    <button id="recStop">Stop &amp; build extension</button><br>
+    <button id="recBuild">Build again</button>
+    <button id="recCopy">Copy JSON</button>
+    <button id="recDownload">Download JSON</button>
+    <button id="recClear">Clear</button>
+    <details>
+      <summary>Build from a pasted JSON recording</summary>
+      <textarea id="pasteJson" rows="4" placeholder="Paste the recording JSON here"></textarea>
+      <button id="pasteBuild" class="full">Build from pasted JSON</button>
+    </details>
+    <div id="recMsg"></div>
+  </section>
+  <section>
+    <h3>2. Run the built-in test automation</h3>
+    <input id="email" type="email" placeholder="Email to sign up with">
+    <button id="start" class="full">Start on this tab</button>
+    <div id="msg"></div>
+  </section>
+  <script src="generator.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

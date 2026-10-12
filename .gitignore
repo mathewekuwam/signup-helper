@@ -1,0 +1,22 @@
+# Operating System Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor & IDE Directories
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Generated zip files and recording backups
+*.zip
+signup-recording.json
+auto-signup-*.zip
+
+# Local scratch / test files
+values.local.json
+results.json
